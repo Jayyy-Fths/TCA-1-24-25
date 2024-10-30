@@ -11,8 +11,7 @@ function randomColor() {
     const blue = Math.round(Math.random() * 225)
 
     const color = 'rgb(${red}, ${green},  ${blue})'
-body.style.backgroundColor = color;
+    body.style.backgroundColor = color;
 
 }
 
-randomColor()
