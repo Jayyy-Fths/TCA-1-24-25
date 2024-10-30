@@ -1,17 +1,9 @@
-const body = document.getElementsByTagName("body")  [0]
-
-function setColor(name){
-    body.style.backgroundColor = name;
-
+function setcolor(color) {
+    document.body.style.backgroundColor = color;
 }
 
 function randomColor() {
-    const red = Math.round(Math.random() * 225)
-    const green = Math.round(Math.random() * 225)
-    const blue = Math.round(Math.random() * 225)
-
-    const color = 'rgb(${red}, ${green},  ${blue})'
-    body.style.backgroundColor = color;
-
+    const colors = ['green', 'red', 'blue', 'yellow', 'purple', 'orange'];
+    const randomIndex = Math.floor(Math.random() * colors.length);
+    document.body.style.backgroundColor = colors[randomIndex];
 }
-
